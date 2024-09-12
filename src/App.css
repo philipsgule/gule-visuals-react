@@ -7,7 +7,6 @@ body, html {
         width: 100%;
         font-family: 'Roboto', sans-serif;
         background-color: black;
-        color: #c30b31;
         background-image: url(/src/components/images/BackgroundImage.png);
         -ms-overflow-style: none;
         /* IE and Edge */
@@ -17,13 +16,21 @@ body, html {
 
 h1,
 h2,
-h3,
-p {
+h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
+    color: #c30b31;
 }
+
+p {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: large;
+        color: white;
+    }
 
 section {
     scroll-snap-align: start;
@@ -69,6 +76,11 @@ div::-webkit-scrollbar {
 /* Style the title if needed */
 .center-title {
     font-size: 3rem;
+    /* Adjust font size */
+    text-align: center;
+    /* Optional: center text alignment */
+}
+.center-text {
     /* Adjust font size */
     text-align: center;
     /* Optional: center text alignment */
