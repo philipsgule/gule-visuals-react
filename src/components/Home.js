@@ -12,6 +12,8 @@ const Home = () => {
     backgroundSize: 'cover', // Make sure the image covers the entire area
     backgroundPosition: 'center', // Center the image
     backgroundRepeat: 'no-repeat', // Ensure the image doesn't repeat
+    margin: 0,
+    padding: 0,
   };
 
 

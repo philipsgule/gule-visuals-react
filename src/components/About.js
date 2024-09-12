@@ -1,5 +1,4 @@
 import React from 'react';
-import './sections.css'
 
 const About = () => {
     const sectionStyle = {

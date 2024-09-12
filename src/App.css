@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* Adjust the sections to account for the fixed nav */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    background-image: url(/src/components/images/BackgroundImage.png);
+body, html {
+    margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        background-color: black;
+        color: white;
+        background-image: url(/src/components/images/BackgroundImage.png);
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
 }
 
 section {
-    padding: 2rem;
     scroll-snap-align: start;
 }
 
@@ -36,11 +55,4 @@ div::-webkit-scrollbar {
 ::-webkit-scrollbar {
     display: none;
     /* Hides scrollbar in Chrome, Safari, and Opera */
-}
-
-html {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }
