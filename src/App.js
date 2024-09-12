@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css';  // Import the CSS file
+import Home from './components/Home';
+import Work from './components/Work';
+import About from './components/About';
+import Contact from './components/Contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+
+      {/* Scrollable Sections with Scroll Snap */}
+      <div>
+        <section id="home"><Home /></section>
+        <section id="work"><Work /></section>
+        <section id="about"><About /></section>
+        <section id="contact"><Contact /></section>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
