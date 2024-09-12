@@ -11,7 +11,7 @@ const Home = () => {
   }
 
   const imgStyle = {
-    width: '100%',
+    width: '90%',
   }
 
   return (

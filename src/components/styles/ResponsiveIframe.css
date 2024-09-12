@@ -1,4 +1,3 @@
-/* Parent container with aspect ratio */
 .iframe-container {
     position: relative;
     width: 100%;
@@ -13,15 +12,42 @@
     position: absolute;
     top: 0;
     left: 50%;
-    /* Start at 50% of the parent container */
     transform: translateX(-50%);
-    /* Offset by 50% of iframe width to center */
     width: 70%;
-    /* Adjust width as needed */
     height: 70%;
-    /* Adjust height as needed */
     border: 0;
     border-radius: 20px;
+}
+
+/* Custom arrow styling */
+.custom-arrow {
+    position: absolute;
+    top: 40%;
+    /* Vertically center the arrow */
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20px;
+    /* Ensure arrows are on top of the iframe */
+}
+
+.prev-arrow {
+    left: 10px;
+    /* Position the left arrow */
+}
+
+.next-arrow {
+    right: 10px;
+    /* Position the right arrow */
+}
+
+/* Adjust the dots at the bottom */
+.slick-dots {
+    bottom: 15px;
 }
 
 /* Increase size on iPhone and smaller devices */
@@ -31,5 +57,9 @@
         /* Make it larger */
         height: 80%;
         /* Adjust height proportionally */
+    }
+
+    .custom-arrow {
+        top:30%
     }
 }
