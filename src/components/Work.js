@@ -1,15 +1,13 @@
 import React from 'react';
 import ResponsiveIframe from './ResponsiveIframe';
+import '../App.css';
+
 
 const App = () => {
-
-  const sectionStyle = {
-    justifyContent: 'center',  // Horizontally center the content        // Padding to prevent overlap with the tab bar
-  };
   
   return (
-    <div style={sectionStyle}>
-    <h1>WORK</h1>
+    <div className="center-container">
+      <h1 className="center-title">Work</h1>
     <div className="App">
       
       {/* Example: YouTube video */}

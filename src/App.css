@@ -56,3 +56,20 @@ div::-webkit-scrollbar {
     display: none;
     /* Hides scrollbar in Chrome, Safari, and Opera */
 }
+
+/* Container that will hold the title and center it */
+.center-container {
+    justify-content: center;
+    /* Horizontally center */
+    /* Vertically center */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Style the title if needed */
+.center-title {
+    font-size: 3rem;
+    /* Adjust font size */
+    text-align: center;
+    /* Optional: center text alignment */
+}

@@ -2,7 +2,6 @@
 .iframe-container {
     position: relative;
     width: 100%;
-    /* Full width */
     padding-bottom: 56.25%;
     /* Aspect ratio: 16:9 */
     height: 0;
@@ -13,8 +12,24 @@
 .iframe-container iframe {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
+    left: 50%;
+    /* Start at 50% of the parent container */
+    transform: translateX(-50%);
+    /* Offset by 50% of iframe width to center */
+    width: 70%;
+    /* Adjust width as needed */
+    height: 70%;
+    /* Adjust height as needed */
     border: 0;
+    border-radius: 20px;
+}
+
+/* Increase size on iPhone and smaller devices */
+@media only screen and (max-width: 600px) {
+    .iframe-container iframe {
+        width: 80%;
+        /* Make it larger */
+        height: 80%;
+        /* Adjust height proportionally */
+    }
 }
