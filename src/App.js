@@ -8,8 +8,6 @@ import Contact from './components/Contact';
 const App = () => {
   return (
     <div>
-      
-
       {/* Scrollable Sections with Scroll Snap */}
       <div>
         <section id="home"><Home /></section>

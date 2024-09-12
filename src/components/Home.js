@@ -1,25 +1,22 @@
 import React from 'react';
-import homeImage from './images/LandingPageImage.png'
+import homeImage from './images/landing-page-logo-large.png'
 
 const Home = () => {
-  const sectionStyle = {
+
+  const containerStyle = {
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh', // Full viewport height
-    width: '100vw',  // Full viewport width
-    backgroundImage: `url(${homeImage})`, // Set the background image
-    backgroundSize: 'cover', // Make sure the image covers the entire area
-    backgroundPosition: 'center', // Center the image
-    backgroundRepeat: 'no-repeat', // Ensure the image doesn't repeat
-    margin: 0,
-    padding: 0,
-  };
+    justifyContent: 'center',
+    margin: '1rem',
+  }
 
-
+  const imgStyle = {
+    width: '100%',
+  }
 
   return (
-    <div style={sectionStyle}>
+    <div style={containerStyle}>
+      <img style={imgStyle} src={homeImage} alt='Logo'></img>
     </div>
   );
 };

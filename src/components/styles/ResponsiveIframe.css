@@ -1,0 +1,20 @@
+/* Parent container with aspect ratio */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    /* Full width */
+    padding-bottom: 56.25%;
+    /* Aspect ratio: 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Responsive iframe styling */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border: 0;
+}
