@@ -5,16 +5,23 @@
     /* Aspect ratio: 16:9 */
     height: 0;
     overflow: hidden;
+    margin-top: -100px;
+    
 }
 
 /* Responsive iframe styling */
 .iframe-container iframe {
     position: absolute;
-    top: 0;
+    top: 50%;
+    /* Center vertically */
     left: 50%;
-    transform: translateX(-50%);
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Move the iframe back by 50% of its width and height */
     width: 70%;
+    /* Width of the iframe */
     height: 70%;
+    /* Height of the iframe */
     border: 0;
     border-radius: 20px;
 }
@@ -22,8 +29,7 @@
 /* Custom arrow styling */
 .custom-arrow {
     position: absolute;
-    top: 40%;
-    /* Vertically center the arrow */
+    top: 50%;
     transform: translateY(-50%);
     background-color: white;
     color: black;
@@ -43,11 +49,6 @@
 .next-arrow {
     right: 10px;
     /* Position the right arrow */
-}
-
-/* Adjust the dots at the bottom */
-.slick-dots {
-    bottom: 15px;
 }
 
 /* Increase size on iPhone and smaller devices */

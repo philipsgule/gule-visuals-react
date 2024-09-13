@@ -34,7 +34,6 @@ const PrevArrow = (props) => {
 const App = () => {
   // Slick carousel settings with custom arrows
   const settings = {
-    dots: false,         // Shows navigation dots at the bottom
     infinite: true,     // Allows infinite looping of slides
     speed: 500,         // Transition speed
     slidesToShow: 1,    // Show 1 slide at a time
